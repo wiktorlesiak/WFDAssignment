@@ -1,17 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Burger index{% endblock %}
+{% block title %}Burger List{% endblock %}
 
 {% block body %}
 
-    <h1>Burger index</h1>
+    <h1>Burger List</h1>
     <table>
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Name</th>
-                <th>Brand</th>
-                <th>Flavour</th>
                 <th>Summary</th>
                 <th>Price</th>
                 <th>Description</th>
@@ -23,20 +21,27 @@
             </tr>
         </thead>
         <tbody>
+
+
         {% for burger in burgers %}
             <tr>
                 <td>{{ burger.id }}</td>
                 <td>{{ burger.name }}</td>
                 <td>{{ burger.summary }}</td>
-                <td>{{ burger.price }}</td>
+                <td>&euro; {{ burger.price }}</td>
                 <td>{{ burger.description }}</td>
                 <td>{{ burger.ingredients }}</td>
-                <td>{{ burger.photo }}</td>
+
+
+                <td><img src="/images/{{ burger.photo }}" width="200" height="150" alt={{ burger.photo }}  /></td>
+
+
+
                 <td>{{ burger.public ? 'Yes' : 'No' }}</td>
                 <td>{{ burger.user.username }}</td>
                 <td>
-                    <a href="{{ path('ice_cream_show', {'id': burger.id}) }}">show</a>
-                    <a href="{{ path('ice_cream_edit', {'id': burger.id}) }}">edit</a>
+                    <a href="{{ path('burger_con_show', {'id': burger.id}) }}">show</a>
+                    <a href="{{ path('burger_con_edit', {'id': burger.id}) }}">edit</a>
                 </td>
             </tr>
         {% else %}
