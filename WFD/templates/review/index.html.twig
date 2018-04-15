@@ -9,7 +9,7 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Ice Cream</th>
+                <th>Burger</th>
                 <th>Summary</th>
                 <th>Date</th>
                 <th>Shop</th>
@@ -25,12 +25,12 @@
         {% for review in reviews %}
             <tr>
                 <td>{{ review.id }}</td>
-                <td>{{ review.icecream.name }}</td>
+                <td>{{ review.burger.name }}</td>
                 <td>{{ review.summary }}</td>
                 <td>{{ review.date ? review.date|date('Y-m-d') : '' }}</td>
                 <td>{{ review.shop }}</td>
-                <td>{{ review.price }}</td>
-                <td>{{ review.stars }}</td>
+                <td>&euro; {{ review.price }}</td>
+                <td>{{ review.stars }}/5</td>
                 <td>{{ review.public ? 'Yes' : 'No' }}</td>
                 <td>{{ review.user.username }}</td>
                 <td>
