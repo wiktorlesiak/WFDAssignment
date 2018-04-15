@@ -8,7 +8,9 @@
     <table>
         <thead>
             <tr>
+                {% if is_granted('ROLE_ADMIN') %}
                 <th>Id</th>
+                {% endif %}
                 <th>Burger</th>
                 <th>Summary</th>
                 <th>Date</th>
@@ -17,14 +19,18 @@
                 <th>Stars</th>
                 <th>Public</th>
                 <th>Reviewed By</th>
+                {% if is_granted('ROLE_ADMIN') %}
                 <th>Actions</th>
+                {% endif %}
 
             </tr>
         </thead>
         <tbody>
         {% for review in reviews %}
             <tr>
+                {% if is_granted('ROLE_ADMIN') %}
                 <td>{{ review.id }}</td>
+                {% endif %}
                 <td>{{ review.burger.name }}</td>
                 <td>{{ review.summary }}</td>
                 <td>{{ review.date ? review.date|date('Y-m-d') : '' }}</td>
@@ -33,10 +39,12 @@
                 <td>{{ review.stars }}/5</td>
                 <td>{{ review.public ? 'Yes' : 'No' }}</td>
                 <td>{{ review.user.username }}</td>
+                {% if is_granted('ROLE_ADMIN') %}
                 <td>
                     <a href="{{ path('review_show', {'id': review.id}) }}">show</a>
                     <a href="{{ path('review_edit', {'id': review.id}) }}">edit</a>
                 </td>
+                {% endif %}
             </tr>
         {% else %}
             <tr>

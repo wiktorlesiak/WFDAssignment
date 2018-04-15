@@ -8,7 +8,9 @@
     <table>
         <thead>
             <tr>
+                {% if is_granted('ROLE_ADMIN') %}
                 <th>Id</th>
+                {% endif %}
                 <th>Name</th>
                 <th>Summary</th>
                 <th>Price</th>
@@ -17,7 +19,10 @@
                 <th>Photo</th>
                 <th>Public</th>
                 <th>Creator</th>
-                <th>Actions</th>
+                {% if is_granted('ROLE_ADMIN') %}
+                    <th>Actions</th>
+                {% endif %}
+
             </tr>
         </thead>
         <tbody>
@@ -25,23 +30,25 @@
 
         {% for burger in burgers %}
             <tr>
-                <td>{{ burger.id }}</td>
+                {% if is_granted('ROLE_ADMIN') %}
+                    <td>{{ burger.id }}</td>
+                {% endif %}
+
                 <td>{{ burger.name }}</td>
                 <td>{{ burger.summary }}</td>
                 <td>&euro; {{ burger.price }}</td>
                 <td>{{ burger.description }}</td>
                 <td>{{ burger.ingredients }}</td>
 
-
                 <td><img src="/images/{{ burger.photo }}" width="200" height="150" alt={{ burger.photo }}  /></td>
-
-
 
                 <td>{{ burger.public ? 'Yes' : 'No' }}</td>
                 <td>{{ burger.user.username }}</td>
                 <td>
+                {% if is_granted('ROLE_ADMIN') %}
                     <a href="{{ path('burger_con_show', {'id': burger.id}) }}">show</a>
                     <a href="{{ path('burger_con_edit', {'id': burger.id}) }}">edit</a>
+                {% endif %}
                 </td>
             </tr>
         {% else %}
@@ -51,6 +58,9 @@
         {% endfor %}
         </tbody>
     </table>
-    <a href="{{ path('burger_con_new') }}">Create new</a>
+    {% if is_granted('ROLE_USER') %}
+        <a href="{{ path('burger_con_new') }}">Create new</a>
+    {% endif %}
+
 
 {% endblock %}

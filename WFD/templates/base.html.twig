@@ -5,8 +5,12 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
             <link rel="stylesheet" href="/css/font-awesome.css">
             <link rel="stylesheet" href="/css/styles.css">
+            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+
         {% endblock %}
     </head>
         <body>
@@ -22,11 +26,6 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a style="color: #fff;" class="nav-link" href="{{ url('user_index') }}">
-                            Users
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a style="color: #fff;" class="nav-link" href="{{ url('burger_con_index') }}">
                             Burgers!
                         </a>
@@ -37,6 +36,14 @@
                             Reviews
                         </a>
                     </li>
+                    <li class="nav-items">
+                        <a style="color: #fff;" class="nav-link" href="{{ url('login') }}">
+                            Sign-In
+                        </a>
+                    <li class="nav-items">
+                        <a style="color: #fff;" class="nav-link" href="{{ url('logout') }}">
+                            Logout
+                        </a>
                 </ul>
             </div>
         </nav>
