@@ -19,15 +19,12 @@ class UserType extends AbstractType
             ->add('roles', ChoiceType::class,[
                 'choices'=>[
 
-                    'Admin'=>'ROLE_ADMIN',
+                    /*'Admin'=>'ROLE_ADMIN',*/
                     'User'=>'ROLE_USER',
                 ],
                 'expanded'=>true,
                 'multiple'=>true,
-                ])
-
-
-        ;
+                ]) ;
     }
 
     public function configureOptions(OptionsResolver $resolver)

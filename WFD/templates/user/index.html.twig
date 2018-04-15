@@ -8,18 +8,25 @@
     <table>
         <thead>
             <tr>
+                {% if is_granted('ROLE_ADMIN') %}
                 <th>Id</th>
+                {% endif %}
                 <th>Username</th>
+                {% if is_granted('ROLE_ADMIN') %}
                 <th>Password</th>
                 <th>Roles</th>
                 <th>Actions</th>
+                {% endif %}
             </tr>
         </thead>
         <tbody>
         {% for user in users %}
             <tr>
+                {% if is_granted('ROLE_ADMIN') %}
                 <td>{{ user.id }}</td>
+                {% endif %}
                 <td>{{ user.username }}</td>
+                {% if is_granted('ROLE_ADMIN') %}
                 <td>{{ user.password }}</td>
                 <td>
                     {% for role in user.roles %}
@@ -31,6 +38,7 @@
                     <a href="{{ path('user_edit', {'id': user.id}) }}">edit</a>
                 </td>
             </tr>
+                {% endif %}
         {% else %}
             <tr>
                 <td colspan="5">no records found</td>

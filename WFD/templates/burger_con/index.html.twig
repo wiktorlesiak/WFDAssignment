@@ -44,12 +44,12 @@
 
                 <td>{{ burger.public ? 'Yes' : 'No' }}</td>
                 <td>{{ burger.user.username }}</td>
-                <td>
                 {% if is_granted('ROLE_ADMIN') %}
+                <td>
                     <a href="{{ path('burger_con_show', {'id': burger.id}) }}">show</a>
                     <a href="{{ path('burger_con_edit', {'id': burger.id}) }}">edit</a>
-                {% endif %}
                 </td>
+                {% endif %}
             </tr>
         {% else %}
             <tr>
