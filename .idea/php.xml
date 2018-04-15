@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/WFD/vendor/composer" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/WFD/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/WFD/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/WFD/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/WFD/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/WFD/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/WFD/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/WFD/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/WFD/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/WFD/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/WFD/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/WFD/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/WFD/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/WFD/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/WFD/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/WFD/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/WFD/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/WFD/vendor/zendframework/zend-eventmanager" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
+</project>
