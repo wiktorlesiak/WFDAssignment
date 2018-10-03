@@ -1,4 +1,3 @@
 # wfd-burger
-wfd-burger
-Assignment 2 website for food using symfony and php
+website for food using symfony php
 Web-Framework-Development
